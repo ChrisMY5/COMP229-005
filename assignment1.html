@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<!-- Created by Man Young Oh (301161472) / Assignment #1-->
+<html lang="eng">
+
+<head>
+<meta content="en" http-equiv="Content-Language">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Assignment#1</title>
+<meta content="HTML forms" name="keywords">
+<meta content="Assignment04 of COMP123-005" name="BMR Calculator">
+<style type="text/css">
+.auto-style1 {
+	border-radius: 5px;
+	font-size: large;
+	background-color: #808080;
+	color: #FFFFFF;
+	width: 980px;
+	right: auto;
+	left: auto;
+	
+}
+.auto-style2 {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: center;
+	background-color: #E3F0C7;
+	width: 980px;
+	right: auto;
+	left: auto;
+}
+#allPage {
+	margin-right: auto;
+	margin-left: auto;
+	width: 980px;
+}
+</style>
+<link href="Assignment_1(ManYoungOH).css" rel="stylesheet" type="text/css">
+<link href="#1/Assignment1(ManYoungOh_301161472)/Assignment1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="allPage" class="auto-style2">
+	<p id="topHeaderGround" class="auto-style1" style="height: 56px"><span lang="en">
+	<strong id="topHeader">Basal Metabolic Rate (BMR) Calculator</strong></span></p>
+
+	<form id="mainForm" action="" method="post">
+<span lang="en">
+	Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<input id="male" name="Gender" tabindex="1" type="radio" value="1"><span lang="en">Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<input id="female" name="Gender" tabindex="2" type="radio" value="2"><span lang="en">Female<br>
+		<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+		&nbsp;<input id="age" name="Age" size="2" style="width: 105px" tabindex="3" type="text"><span lang="en">&nbsp; years old<br>
+		<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Height&nbsp; &nbsp;&nbsp;&nbsp;</span>
+		<input id="height"name="Height" size="3" style="width: 104px" tabindex="4" type="text"><span lang="en">&nbsp;&nbsp;&nbsp;
+		cm&nbsp;&nbsp;
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp; Weight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+		<input id="weight" name="Weight" size="3" style="width: 107px" tabindex="7" type="text"><span lang="en">&nbsp;&nbsp;
+		kg&nbsp;&nbsp;&nbsp;
+		<br>
+		<br>
+	Activity Level&nbsp;&nbsp;&nbsp;&nbsp; </span>
+		<input id="unactive" name="Activity" style="width: 20px" tabindex="10" type="radio" value="1.53"><span lang="en">Not Active&nbsp;&nbsp;&nbsp;&nbsp; </span>
+		<input id="medium"name="Activity" tabindex="11" type="radio" value="1.76"><span lang="en">Medium Active&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="active"name="Activity" tabindex="12" type="radio" value="2.25">Very Avtive</span>
+		<br>	
+		<br>
+		<br>
+		<br>
+	<input id="btn" name="Button" tabindex="13" type="button" value="Calculate My BMR" style="width: 197px" onclick="bmrCalculator()"><br>
+		<br>
+		<br>
+<span lang="en">
+	Calculated Basal Metabolic Rate (BMR) is
+	<input id="Display" name="BMR" size="10" style="width: 137px" tabindex="14" type="text" readonly><br>
+	
+	<br>You need&nbsp;&nbsp;&nbsp;
+	<input id="Calorie" name="Result" size="10" style="width: 213px" tabindex="15" type="text" readonly>&nbsp;&nbsp; 
+	Calorie intake per day.<br><br><br></span>
+
+	<input name="Reset" style="width: 198px" tabindex="16" type="reset" value="Clear and Do it again?">
+</form>
+</div>
+<script src="./assignment1.js"></script>
+</body>
+
+</html>
